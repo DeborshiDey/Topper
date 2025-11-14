@@ -1,0 +1,11 @@
+[build]
+  publish = "frontend/public"
+
+# Optional: add headers or redirects later if needed
+# [[headers]]
+#   for = "/*"
+#   [headers.values]
+#     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+#     X-Content-Type-Options = "nosniff"
+#     X-Frame-Options = "DENY"
+#     Referrer-Policy = "no-referrer-when-downgrade"
