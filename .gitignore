@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Node packages (if present)
+node_modules/
+frontend/node_modules/
+
+# Build output (not used now, but future-proof)
+dist/
+build/
