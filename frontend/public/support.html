@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KID's TOPPER — Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="TOPPER_page1.jpg" alt="KID's TOPPER" class="h-10 w-10 rounded object-cover" />
+                <span class="font-bold text-xl">KID's TOPPER</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-6 text-sm">
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+                <a href="#faqs" class="hover:text-blue-600">FAQs</a>
+                <a href="#shipping" class="hover:text-blue-600">Shipping Policy</a>
+                <a href="#returns" class="hover:text-blue-600">Returns & Exchanges</a>
+                <a href="#privacy" class="hover:text-blue-600">Privacy Policy</a>
+            </nav>
+            <a href="index.html" class="text-sm px-3 py-2 rounded border hover:bg-gray-50">Back to Home</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-blue-50 border-b">
+        <div class="max-w-6xl mx-auto px-4 py-12 sm:py-16">
+            <h1 class="text-3xl sm:text-4xl font-bold">Support & Help Center</h1>
+            <p class="mt-3 text-gray-700 max-w-2xl">Find quick answers and reach out for assistance. We’re here to help with orders, policies, and product information.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-2xl font-semibold">Contact Us</h2>
+                <p class="mt-2 text-gray-700">Based in Sribhumi, Assam — we craft sustainable notebooks at fair prices. Reach us with any questions.</p>
+                <div class="mt-4 space-y-2 text-gray-800">
+                    <p><strong>Phone:</strong> +91-98765-43210</p>
+                    <p><strong>Email:</strong> support@kidstopper.example</p>
+                    <p><strong>Address:</strong> Sribhumi, Assam, India</p>
+                </div>
+            </div>
+            <form id="support-contact-form" class="bg-gray-50 border rounded p-4 space-y-4">
+                <div>
+                    <label class="block text-sm font-medium">Name</label>
+                    <input type="text" name="name" required class="mt-1 w-full border rounded px-3 py-2" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium">Email</label>
+                    <input type="email" name="email" required class="mt-1 w-full border rounded px-3 py-2" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium">Message</label>
+                    <textarea name="message" rows="4" required class="mt-1 w-full border rounded px-3 py-2"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Send</button>
+                <p id="support-contact-status" class="text-sm text-green-700 hidden">Thanks! We’ll get back to you soon.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" class="py-12 border-t">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-semibold">Frequently Asked Questions</h2>
+            <div class="mt-6 space-y-4">
+                <details class="group border rounded px-4 py-3">
+                    <summary class="font-medium cursor-pointer">What paper quality do you use?</summary>
+                    <p class="mt-2 text-gray-700">We use sustainably sourced paper optimized for smooth writing and minimal bleed-through.</p>
+                </details>
+                <details class="group border rounded px-4 py-3">
+                    <summary class="font-medium cursor-pointer">How long does delivery take?</summary>
+                    <p class="mt-2 text-gray-700">Orders are typically delivered within 5–7 business days within India.</p>
+                </details>
+                <details class="group border rounded px-4 py-3">
+                    <summary class="font-medium cursor-pointer">Do you offer bulk pricing?</summary>
+                    <p class="mt-2 text-gray-700">Yes. Contact us for school or office bulk orders and discounted rates.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="py-12 border-t">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-semibold">Newsletter</h2>
+            <p class="mt-2 text-gray-700">Subscribe to receive our newsletter and new product information by email.</p>
+            <form id="support-newsletter-form" class="mt-4 max-w-md">
+                <div class="flex">
+                    <input id="support-newsletter-email" name="email" type="email" required placeholder="Your email address" class="flex-grow px-4 py-2 border rounded-l">
+                    <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-r hover:bg-blue-700">Subscribe</button>
+                </div>
+                <label class="mt-3 inline-flex items-center gap-2 text-sm text-gray-700">
+                    <input type="checkbox" id="support-newsletter-updates" name="product_updates" class="rounded border-gray-300" checked>
+                    <span>Send me new product updates</span>
+                </label>
+                <p id="support-newsletter-status" class="mt-2 text-sm text-green-700 hidden">Subscribed! Please check your inbox.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Shipping Policy -->
+    <section id="shipping" class="py-12 border-t">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-semibold">Shipping Policy</h2>
+            <div class="mt-3 text-gray-700 space-y-2">
+                <p>• Standard shipping: 5–7 business days across India.</p>
+                <p>• Orders ship within 48 hours on business days.</p>
+                <p>• Tracking details are sent via email after dispatch.</p>
+                <p>• Free shipping on orders over ₹999.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Returns & Exchanges -->
+    <section id="returns" class="py-12 border-t">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-semibold">Returns & Exchanges</h2>
+            <div class="mt-3 text-gray-700 space-y-2">
+                <p>• 7-day return window for unused items in original packaging.</p>
+                <p>• Damaged or defective products are eligible for free replacement.</p>
+                <p>• To start a return, email order ID and photos to support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy -->
+    <section id="privacy" class="py-12 border-t">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-semibold">Privacy Policy</h2>
+            <div class="mt-3 text-gray-700 space-y-2">
+                <p>We respect your privacy. We only collect data needed to process orders and provide support.</p>
+                <p>We do not sell your data. For full details, contact support for the complete policy document.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t">
+        <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex items-center justify-between">
+            <p>© 2025 KID's TOPPER — Sribhumi, Assam</p>
+            <a href="#contact" class="hover:text-blue-600">Need help? Contact us</a>
+        </div>
+    </footer>
+
+    <script>
+        // Contact form email sending (endpoint first, then EmailJS fallback)
+        const CONTACT_ENDPOINT = 'https://formspree.io/f/YOUR_CONTACT_FORM_ID';
+        const EMAILJS_PUBLIC_KEY = '';
+        const EMAILJS_SERVICE_ID = '';
+        const EMAILJS_TEMPLATE_ID = '';
+
+        function loadEmailJS() {
+            return new Promise((resolve, reject) => {
+                if (window.emailjs) return resolve();
+                const s = document.createElement('script');
+                s.src = 'https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js';
+                s.onload = () => { try { window.emailjs.init(EMAILJS_PUBLIC_KEY); resolve(); } catch (e) { reject(e); } };
+                s.onerror = reject;
+                document.head.appendChild(s);
+            });
+        }
+
+        document.getElementById('support-contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const status = document.getElementById('support-contact-status');
+            const name = (form.querySelector('[name="name"]')?.value || '').trim();
+            const email = (form.querySelector('[name="email"]')?.value || '').trim();
+            const message = (form.querySelector('[name="message"]')?.value || '').trim();
+
+            // Endpoint: Formspree style
+            if (CONTACT_ENDPOINT && CONTACT_ENDPOINT.includes('/f/')) {
+                const fd = new FormData();
+                fd.append('name', name);
+                fd.append('email', email);
+                fd.append('message', message);
+                fd.append('source', 'support_contact_form');
+                fetch(CONTACT_ENDPOINT, { method: 'POST', headers: { 'Accept': 'application/json' }, body: fd })
+                    .then(res => {
+                        if (res.ok) {
+                            status.classList.remove('hidden');
+                            status.classList.remove('text-red-700');
+                            status.classList.add('text-green-700');
+                            status.textContent = 'Message sent! We’ll get back to you soon.';
+                            form.reset();
+                        } else {
+                            throw new Error('Send failed');
+                        }
+                    })
+                    .catch(() => {
+                        status.classList.remove('hidden');
+                        status.classList.remove('text-green-700');
+                        status.classList.add('text-red-700');
+                        status.textContent = 'Could not send right now. Please try again later.';
+                    });
+                return;
+            }
+
+            // EmailJS fallback
+            if (EMAILJS_PUBLIC_KEY && EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID) {
+                loadEmailJS()
+                    .then(() => window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+                        from_name: name,
+                        reply_to: email,
+                        message: message,
+                        source: 'support_contact_form'
+                    }))
+                    .then(() => { status.classList.remove('hidden'); status.textContent = 'Message sent! We’ll get back to you soon.'; form.reset(); })
+                    .catch(() => { status.classList.remove('hidden'); status.classList.add('text-red-700'); status.textContent = 'Could not send right now. Please try again later.'; });
+                return;
+            }
+
+            // Local fallback
+            status.classList.remove('hidden');
+            status.textContent = 'Message captured locally. Configure email sending to deliver to your inbox.';
+            form.reset();
+        });
+
+        const NEWSLETTER_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+        document.getElementById('support-newsletter-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = document.getElementById('support-newsletter-email').value.trim();
+            const wantsUpdates = document.getElementById('support-newsletter-updates').checked;
+            const status = document.getElementById('support-newsletter-status');
+
+            if (NEWSLETTER_ENDPOINT && NEWSLETTER_ENDPOINT.includes('/f/')) {
+                const fd = new FormData();
+                fd.append('email', email);
+                fd.append('product_updates', wantsUpdates ? 'yes' : 'no');
+                fd.append('source', 'support_page');
+                fetch(NEWSLETTER_ENDPOINT, { method: 'POST', headers: { 'Accept': 'application/json' }, body: fd })
+                    .then(res => {
+                        if (res.ok) {
+                            status.classList.remove('hidden');
+                            status.textContent = 'Subscribed! Please check your inbox.';
+                            e.target.reset();
+                        } else {
+                            throw new Error('Subscription failed');
+                        }
+                    })
+                    .catch(() => {
+                        status.classList.remove('hidden');
+                        status.classList.remove('text-green-700');
+                        status.classList.add('text-red-700');
+                        status.textContent = 'Could not subscribe right now. Please try again later.';
+                    });
+            } else {
+                status.classList.remove('hidden');
+                status.textContent = 'Subscribed! Please check your inbox.';
+                e.target.reset();
+            }
+        });
+
+        // Smooth scroll for internal anchors on this page
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', (e) => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# Update the sitemap URL after you set your domain
+User-agent: *
+Allow: /
+Sitemap: https://toppernotebooks.in/sitemap.xml
